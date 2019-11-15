@@ -22,6 +22,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+@import "../styles/variables.scss";
+
 .titles {
   margin: 12.5rem 0rem 9rem;
   .title {
@@ -30,7 +32,7 @@ export default {
     font-family: "GT America";
     font-weight: 900;
     line-height: 1em;
-    color: white;
+    color: $main-color;
     &.left {
       text-align: left;
     }

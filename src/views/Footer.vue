@@ -57,7 +57,7 @@ export default {
       font-weight: 900;
       line-height: 1.1em;
       // width: 80%;
-      color: #fff;
+      color: $main-color;
       span {
         background: $gradient-color-3; /* fallback for old browsers */
         background: -webkit-linear-gradient(

@@ -47,7 +47,7 @@ export default {
   height: 8.5vw;
   width: 8.5vw;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid $main-color;
   display: flex;
   justify-content: center;
   align-items: center;

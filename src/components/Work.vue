@@ -236,7 +236,8 @@ body {
   background-size: cover;
   background-position: 50% 0%;
   will-change: transform;
-  opacity: 0.8;
+  // opacity: 0.8;
+  opacity: 1;
 }
 
 .content__item-img--t1 {

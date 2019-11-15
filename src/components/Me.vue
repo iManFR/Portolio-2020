@@ -36,7 +36,7 @@ export default {
     font-family: "GT America";
     font-weight: 900;
     line-height: 1em;
-    color: white;
+    color: $main-color;
     &.left {
       text-align: left;
     }
@@ -46,7 +46,7 @@ export default {
   }
 }
 p {
-  color: white;
+  color: $main-color;
   font-family: "GT America";
   font-weight: 500;
   font-size: 2em;
