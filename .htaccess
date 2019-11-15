@@ -1,4 +1,4 @@
 AuthName "Site en construction"
 AuthType Basic
-AuthUserFile "/www/.htpasswd"
+AuthUserFile "/.htpasswd"
 Require valid-user
