@@ -36,6 +36,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../styles/variables.scss";
+@import "~bootstrap/scss/mixins";
 
 .footer-content {
   width: 100%;
@@ -95,9 +96,13 @@ export default {
           font-family: "GT America";
           // font-size: calc(25px + (3200vw - 16000px) / 1900);
           font-weight: 900;
-          // @include media-breakpoint-down(sm) {
-          //   font-size: calc(18px + (3200vw - 16000px) / 1900);
-          // }
+          font-size: 35px;
+          @include media-breakpoint-down(md) {
+            font-size: 25px;
+          }
+          @include media-breakpoint-down(sm) {
+            font-size: 18px;
+          }
         }
       }
     }

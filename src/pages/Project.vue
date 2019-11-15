@@ -13,26 +13,18 @@
       </div>
     </div>
 
-    <Info :title="title" :authors="authors" :date="date" :role="role"></Info>
+    <Info :title="title" :authors="authors" :date="date" :role="role" :brief="brief"></Info>
 
-    <div class="col-10 mx-auto">
-      <!-- <img :src="path + imgs[0]" class="img-fluid" alt /> -->
-      <img :src="cover" class="img-fluid" alt />
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <img :src="cover" class="img-fluid" alt />
-        </div>
-        <div class="col-12 col-md-6">
-          <img :src="cover" class="img-fluid" alt />
-        </div>
-        <div class="col-12 col-md-6">
-          <img :src="cover" class="img-fluid" alt />
-        </div>
-        <div class="col-12 col-md-6">
-          <img :src="cover" class="img-fluid" alt />
-        </div>
-      </div>
-      <img :src="cover" class="img-fluid" alt />
+    <div class="col-12 col-md-10 mx-auto">
+      <img class="img-fluid" :src="imagePath+imgs[0]" alt />
+      <img class="img-fluid" :src="imagePath+imgs[1]" alt />
+    </div>
+    <div class="container-fluid middle-banner">
+      <img :src="imagePath+imgs[2]" alt />
+    </div>
+    <div class="col-12 col-md-10 mx-auto">
+      <img class="img-fluid" :src="imagePath+imgs[3]" alt />
+      <img class="img-fluid" :src="imagePath+imgs[4]" alt />
     </div>
     <Footer></Footer>
   </div>
@@ -53,14 +45,24 @@ export default {
     "role",
     "cover",
     "imgs",
-    "path"
+    "path",
+    "brief"
   ],
   components: {
     Info,
     Footer
   },
   data() {
-    return {};
+    return {
+      imagePath: `src/assets/img/${this.slug}/`
+      // imagePath: [
+      //   require(`@/assets/img/${this.slug}/image1.jpg`),
+      //   require(`@/assets/img/${this.slug}/image2.jpg`),
+      //   require(`@/assets/img/${this.slug}/image3.jpg`),
+      //   require(`@/assets/img/${this.slug}/image4.jpg`),
+      //   require(`@/assets/img/${this.slug}/image5.jpg`)
+      // ]
+    };
   },
   mounted() {
     window.scrollTo(0, 0);
@@ -113,6 +115,15 @@ export default {
 }
 img {
   // --aspect-ratio: 16/9;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.middle-banner {
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem 0;
 }
 </style>

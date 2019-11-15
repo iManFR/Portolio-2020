@@ -14,7 +14,7 @@
           <h3>Brief</h3>
         </div>
         <div class="info-desc">
-          <p>Développement du site Ecommerce de Frnch sous Prestashop 1.7</p>
+          <p>{{ brief }}</p>
         </div>
       </div>
       <div class="col-6 col-md-3">
@@ -46,7 +46,7 @@
 import data from "../data.json";
 export default {
   name: "Info",
-  props: ["title", "authors", "date", "role"],
+  props: ["title", "authors", "date", "role", "brief"],
   components: {},
   data() {
     return {

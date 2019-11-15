@@ -13,7 +13,8 @@
         role: role,
         cover: cover,
         imgs: imgs,
-        path: path
+        path: path,
+        brief: brief
       } 
     }"
   >
@@ -60,7 +61,8 @@ export default {
     "cover",
     "authors",
     "date",
-    "role"
+    "role",
+    "brief"
   ],
   data() {
     return {

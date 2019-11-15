@@ -64,7 +64,7 @@
                     "type": "Design & Dev",
                     "text": "Design et développement du site The Wild Bazar sous Prestashop 1.7 pour une boutique de décoration située à Biarritz"
                 },
-                "date": "July - August 2019",
+                "date": "March - April 2019",
                 "brief": "Test",
                 "link": "https://www.frnch.com/",
                 "color": "",
@@ -72,7 +72,10 @@
                 "imgpath": "../assets/img/thewildbazar/",
                 "imgs": [
                     "image1.jpg",
-                    "image2.jpg"
+                    "image2.jpg",
+                    "image3.jpg",
+                    "image4.jpg",
+                    "image5.jpg"
                 ]
             },
             {
@@ -132,7 +135,7 @@
                 "titlehtml": "Mosaïculture",
                 "slug": "mosaiculture",
                 "desc": "Website",
-                "visible": true,
+                "visible": false,
                 "client": "Janic Gourlet",
                 "authors": [
                     "Dev : Manolo Pecout",
