@@ -91,7 +91,7 @@ export default {
       li {
         list-style: none;
         a {
-          color: white;
+          color: $main-color;
           font-family: "GT America";
           // font-size: calc(25px + (3200vw - 16000px) / 1900);
           font-weight: 900;

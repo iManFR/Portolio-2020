@@ -104,7 +104,7 @@ export default {
 }
 
 .project-desc {
-  color: white;
+  color: $main-color;
   font-size: 2.5vw;
   white-space: nowrap;
   font-family: $main-font;
