@@ -1,0 +1,183 @@
+{
+    "name": "Manolo Pecout",
+    "landing": {
+        "name": "Manolo Pecout",
+        "freelance": "Freelance",
+        "aviability": true,
+        "roles": [
+            "Web Developer",
+            "UI/UX Designer"
+        ]
+    },
+    "about": {
+        "title": [
+            "Who",
+            "I am ?"
+        ],
+        "text": "Hey ! <br/> I’m Manolo Pecout, a french web student at HETIC and freelance web developper and web designer on my free time. Feel free to contact me to talk about your project."
+    },
+    "works": {
+        "title": [
+            "What",
+            "I do ?"
+        ],
+        "projects": [
+            {
+                "title": "W3lead",
+                "titlehtml": "W3lead",
+                "slug": "w3lead",
+                "desc": "Internship",
+                "visible": true,
+                "client": "",
+                "authors": [
+                    "Agency : W3lead",
+                    "Dev : Manolo Pecout, Thiebauld Genet",
+                    "Design UI/UX : Arthur Fayolle"
+                ],
+                "role": {
+                    "type": "Dev",
+                    "text": "Développement du site Ecommerce de Frnch sous Prestashop 1.7 à l'occasion de mon stage chez W3lead"
+                },
+                "date": "July - October 2019",
+                "brief": "Test",
+                "link": "https://www.w3lead.com/",
+                "color": "",
+                "cover": "w3lead.jpg",
+                "imgpath": "../assets/img/w3lead/",
+                "imgs": [
+                    "image1.jpg",
+                    "image2.jpg"
+                ]
+            },
+            {
+                "title": "The Wild Bazar",
+                "titlehtml": "The <br/> Wild <br/> Bazar",
+                "slug": "thewildbazar",
+                "desc": "Ecommerce",
+                "visible": true,
+                "client": "Les petites productions",
+                "authors": [
+                    "Dev : Manolo Pecout",
+                    "UI/UX Design : Manolo Pecout"
+                ],
+                "role": {
+                    "type": "Design & Dev",
+                    "text": "Design et développement du site The Wild Bazar sous Prestashop 1.7 pour une boutique de décoration située à Biarritz"
+                },
+                "date": "July - August 2019",
+                "brief": "Test",
+                "link": "https://www.frnch.com/",
+                "color": "",
+                "cover": "thewildbazar.jpg",
+                "imgpath": "../assets/img/thewildbazar/",
+                "imgs": [
+                    "image1.jpg",
+                    "image2.jpg"
+                ]
+            },
+            {
+                "title": "Futuristic Interface",
+                "titlehtml": "Futuristic <br/> Interface",
+                "slug": "futuristicinterface",
+                "desc": "School project",
+                "visible": true,
+                "client": "Me",
+                "authors": [
+                    "Dev : Manolo Pecout",
+                    "UI/UX Design : Manolo Pecout"
+                ],
+                "role": {
+                    "type": "Dev",
+                    "text": "Développement du site Ecommerce de Frnch sous Prestashop 1.7 à l'occasion de mon stage chez W3lead"
+                },
+                "date": "July - August 2019",
+                "brief": "Test",
+                "link": "https://www.frnch.com/",
+                "color": "",
+                "cover": "futuristicinterface.jpg",
+                "imgpath": "../assets/img/thewildbazar",
+                "imgs": [
+                    "image1.jpg",
+                    "image2.jpg"
+                ]
+            },
+            {
+                "title": "Around the world",
+                "titlehtml": "Around <br/> The <br/> World",
+                "slug": "aroundtheworld",
+                "desc": "School project",
+                "visible": true,
+                "client": "Me",
+                "authors": [
+                    "Dev : Manolo Pecout",
+                    "UI/UX Design : Manolo Pecout"
+                ],
+                "role": {
+                    "type": "Dev",
+                    "text": "Développement du site Ecommerce de Frnch sous Prestashop 1.7 à l'occasion de mon stage chez W3lead"
+                },
+                "date": "July - August 2019",
+                "brief": "Test",
+                "link": "https://www.frnch.com/",
+                "color": "",
+                "cover": "atw.jpg",
+                "imgpath": "../assets/img/thewildbazar",
+                "imgs": [
+                    "image1.jpg",
+                    "image2.jpg"
+                ]
+            },
+            {
+                "title": "Mosaïculture",
+                "titlehtml": "Mosaïculture",
+                "slug": "mosaiculture",
+                "desc": "Website",
+                "visible": true,
+                "client": "Janic Gourlet",
+                "authors": [
+                    "Dev : Manolo Pecout",
+                    "UI/UX Design : Manolo Pecout"
+                ],
+                "role": {
+                    "type": "Dev",
+                    "text": "Développement du site Ecommerce de Frnch sous Prestashop 1.7 à l'occasion de mon stage chez W3lead"
+                },
+                "date": "July - August 2019",
+                "brief": "Test",
+                "link": "https://www.frnch.com/",
+                "color": "",
+                "cover": "mosa.jpg",
+                "imgpath": "../assets/img/thewildbazar",
+                "imgs": [
+                    "image1.jpg",
+                    "image2.jpg"
+                ]
+            }
+        ]
+    },
+    "footer": {
+        "text": [
+            "Would you like to get in touch to talk about your project ?",
+            "Send me an email at"
+        ],
+        "mail": "manolo.p@hotmail.fr",
+        "socials": [
+            {
+                "name": "Instagram",
+                "link": "https://www.instagram.com/manolo_pecout/"
+            },
+            {
+                "name": "Dribbble",
+                "link": "https://dribbble.com/iManFR"
+            },
+            {
+                "name": "Malt",
+                "link": "https://www.malt.fr/profile/manolopecout"
+            },
+            {
+                "name": "Github",
+                "link": "https://github.com/iManFR"
+            }
+        ]
+    }
+}

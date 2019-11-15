@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'GT America';
+    src: url('../src/assets/fonts/GTAmerica-Bold.eot');
+    src: url('../src/assets/fonts/GTAmerica-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../src/assets/fonts/GTAmerica-Bold.woff2') format('woff2'),
+        url('../src/assets/fonts/GTAmerica-Bold.woff') format('woff'),
+        url('../src/assets/fonts/GTAmerica-Bold.ttf') format('truetype'),
+        url('../src/assets/fonts/GTAmerica-Bold.svg#GTAmerica-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../src/assets/fonts/GTAmerica-Medium.eot');
+    src: url('../src/assets/fonts/GTAmerica-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../src/assets/fonts/GTAmerica-Medium.woff2') format('woff2'),
+        url('../src/assets/fonts/GTAmerica-Medium.woff') format('woff'),
+        url('../src/assets/fonts/GTAmerica-Medium.ttf') format('truetype'),
+        url('../src/assets/fonts/GTAmerica-Medium.svg#GTAmerica-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../src/assets/fonts/GTAmerica-Black.eot');
+    src: url('../src/assets/fonts/GTAmerica-Black.eot?#iefix') format('embedded-opentype'),
+        url('../src/assets/fonts/GTAmerica-Black.woff2') format('woff2'),
+        url('../src/assets/fonts/GTAmerica-Black.woff') format('woff'),
+        url('../src/assets/fonts/GTAmerica-Black.ttf') format('truetype'),
+        url('../src/assets/fonts/GTAmerica-Black.svg#GTAmerica-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+

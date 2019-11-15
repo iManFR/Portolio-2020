@@ -1,0 +1,54 @@
+// Colors
+$main-color: #fff;
+$second-color: #000;
+
+// Instagram
+// $gradient-color-1: #f27121;
+// $gradient-color-2: #e94057;
+// $gradient-color-3: #8a2387;
+
+// $gradient-color-1: #5b86e5;
+// $gradient-color-2: #5b86e5;
+// $gradient-color-3: #36d1dc;
+
+// Blue green
+$gradient-color-1: #a5fecb;
+$gradient-color-2: #20bdff;
+$gradient-color-3: #5433ff;
+
+// Fonts
+$main-font: "GT America";
+// $second-font: "";
+
+// Weight
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$black: 900;
+
+
+// Mixins
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+    xs: 0,
+  // Small screen / phone
+    sm: 576px,
+  // Medium screen / tablet
+    md: 768px,
+  // Large screen / desktop
+    lg: 992px,
+  // Extra large screen / wide desktop
+    xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
