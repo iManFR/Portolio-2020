@@ -86,6 +86,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "../styles/variables.scss";
+@import "~bootstrap/scss/mixins";
 
 .title-section {
   margin: 3rem 0;
@@ -116,6 +117,9 @@ export default {
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @include media-breakpoint-down(sm) {
+    font-size: 95px;
+  }
 }
 
 .project-desc {
@@ -125,6 +129,10 @@ export default {
   font-family: $main-font;
   font-weight: $bold;
   text-align: right;
+  @include media-breakpoint-down(sm) {
+    text-align: left;
+    font-size: 10vw;
+  }
 }
 img {
   // --aspect-ratio: 16/9;
@@ -138,5 +146,12 @@ img {
   justify-content: center;
   align-items: center;
   margin: 2.5rem 0 5rem;
+  padding: 0;
+  @include media-breakpoint-down(sm) {
+    height: 200px;
+  }
+  img {
+    width: 100%;
+  }
 }
 </style>

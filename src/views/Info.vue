@@ -1,7 +1,7 @@
 <template>
   <div class="info-section col-12 col-md-10 mx-auto">
     <div class="row">
-      <div class="col-6 col-md-3">
+      <div class="col-6 col-md-3 mt-3">
         <div class="info-title">
           <h3>{{ role.type }}</h3>
         </div>
@@ -9,7 +9,7 @@
           <p>{{ role.text }}</p>
         </div>
       </div>
-      <div class="col-6 col-md-3">
+      <div class="col-6 col-md-3 mt-3">
         <div class="info-title">
           <h3>Client</h3>
         </div>
@@ -17,7 +17,7 @@
           <p>{{ client }}</p>
         </div>
       </div>
-      <div class="col-6 col-md-3">
+      <div class="col-6 col-md-3 mt-3">
         <div class="info-title">
           <h3>Date</h3>
         </div>
@@ -25,7 +25,7 @@
           <p>{{ date }}</p>
         </div>
       </div>
-      <div class="col-6 col-md-3">
+      <div class="col-6 col-md-3 mt-3">
         <div class="info-title">
           <h3>Authors</h3>
         </div>
