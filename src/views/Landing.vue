@@ -56,6 +56,9 @@ export default {
   top: 27.5%;
   will-change: transform;
   animation: rotation 3s linear infinite;
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
   span {
     background: $gradient-color-3; /* fallback for old browsers */
     background: -webkit-linear-gradient(
