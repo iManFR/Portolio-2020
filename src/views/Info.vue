@@ -1,5 +1,5 @@
 <template>
-  <div class="info-section col-10 mx-auto">
+  <div class="info-section col-12 col-md-10 mx-auto">
     <div class="row">
       <div class="col-6 col-md-3">
         <div class="info-title">

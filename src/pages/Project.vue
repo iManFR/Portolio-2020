@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="title-section col-10 mx-auto">
+    <div class="title-section col-12 col-md-10 mx-auto">
       <div class="row">
         <div class="col-12 col-md-8">
           <!-- <h1 class="project-title" v-html="titlehtml"></h1> -->
