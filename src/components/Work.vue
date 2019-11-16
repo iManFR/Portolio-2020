@@ -14,7 +14,8 @@
         cover: cover,
         imgs: imgs,
         path: path,
-        brief: brief
+        client: client,
+        link: link
       } 
     }"
   >
@@ -62,7 +63,8 @@ export default {
     "authors",
     "date",
     "role",
-    "brief"
+    "client",
+    "link"
   ],
   data() {
     return {
@@ -211,9 +213,11 @@ body {
   margin: 0 auto;
   grid-area: 1 / 1 / 3 / 3;
   overflow: hidden;
-  width: var(--imgwidth);
+  // width: var(--imgwidth);
   padding-bottom: calc(var(--imgwidth) / (var(--aspect-ratio)));
   will-change: transform;
+  width: 100%;
+  height: 600px;
 }
 
 .demo-2 .content__item-imgwrap {

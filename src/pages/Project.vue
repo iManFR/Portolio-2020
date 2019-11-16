@@ -13,7 +13,7 @@
       </div>
     </div>
 
-    <Info :title="title" :authors="authors" :date="date" :role="role" :brief="brief"></Info>
+    <Info :title="title" :authors="authors" :date="date" :role="role" :client="client" :link="link"></Info>
 
     <div class="col-12 col-md-10 mx-auto">
       <img class="img-fluid" :src="imagePath+imgs[0]" alt />
@@ -26,12 +26,14 @@
       <img class="img-fluid" :src="imagePath+imgs[3]" alt />
       <img class="img-fluid" :src="imagePath+imgs[4]" alt />
     </div>
+    <ProjectNav />
     <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Info from "../views/Info";
+import ProjectNav from "../components/ProjectNav";
 import Footer from "../views/Footer";
 export default {
   name: "Project",
@@ -46,10 +48,12 @@ export default {
     "cover",
     "imgs",
     "path",
-    "brief"
+    "client",
+    "link"
   ],
   components: {
     Info,
+    ProjectNav,
     Footer
   },
   data() {
@@ -124,6 +128,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2.5rem 0;
+  margin: 2.5rem 0 5rem;
 }
 </style>

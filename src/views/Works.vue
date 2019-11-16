@@ -16,7 +16,8 @@
         :authors="work.authors"
         :date="work.date"
         :role="work.role"
-        :brief="work.brief"
+        :client="work.client"
+        :link="work.link"
       ></Work>
     </div>
   </div>

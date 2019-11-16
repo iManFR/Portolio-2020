@@ -11,10 +11,10 @@
       </div>
       <div class="col-6 col-md-3">
         <div class="info-title">
-          <h3>Brief</h3>
+          <h3>Client</h3>
         </div>
         <div class="info-desc">
-          <p>{{ brief }}</p>
+          <p>{{ client }}</p>
         </div>
       </div>
       <div class="col-6 col-md-3">
@@ -36,6 +36,7 @@
             <br />Design UI/UX : Arthur Fayolle
           </p>-->
           <p v-for="author in authors" :key="author.id">{{ author }}</p>
+          <a class="btn btn-1 btn-1c" :href="link">View website</a>
         </div>
       </div>
     </div>
@@ -46,7 +47,7 @@
 import data from "../data.json";
 export default {
   name: "Info",
-  props: ["title", "authors", "date", "role", "brief"],
+  props: ["title", "authors", "date", "role", "client", "link"],
   components: {},
   data() {
     return {
@@ -78,6 +79,54 @@ export default {
     font-weight: $light;
     margin: 0;
   }
+}
+
+.btn {
+  margin-top: 3rem;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 0px;
+  font-family: $main-font;
+  font-weight: $light;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 12.5px 5px;
+  display: inline-block;
+  letter-spacing: 1px;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-1c:after {
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
+.btn-1c:hover,
+.btn-1c:active {
+  color: black;
+}
+
+.btn-1c:hover:after,
+.btn-1c:active:after {
+  width: 100%;
 }
 
 img {
