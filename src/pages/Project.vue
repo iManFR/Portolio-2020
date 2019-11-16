@@ -15,7 +15,7 @@
 
     <Info :title="title" :authors="authors" :date="date" :role="role" :client="client" :link="link"></Info>
 
-    <div class="col-12 col-md-10 mx-auto">
+    <!-- <div class="col-12 col-md-10 mx-auto">
       <img class="img-fluid" :src="imagePath+imgs[0]" alt />
       <img class="img-fluid" :src="imagePath+imgs[1]" alt />
     </div>
@@ -25,6 +25,17 @@
     <div class="col-12 col-md-10 mx-auto">
       <img class="img-fluid" :src="imagePath+imgs[3]" alt />
       <img class="img-fluid" :src="imagePath+imgs[4]" alt />
+    </div>-->
+    <div class="col-12 col-md-10 mx-auto">
+      <img class="img-fluid" :src="imagePath1" alt />
+      <img class="img-fluid" :src="imagePath2" alt />
+    </div>
+    <div class="container-fluid middle-banner">
+      <img :src="imagePath3" alt />
+    </div>
+    <div class="col-12 col-md-10 mx-auto">
+      <img class="img-fluid" :src="imagePath4" alt />
+      <img class="img-fluid" :src="imagePath5" alt />
     </div>
     <ProjectNav />
     <Footer></Footer>
@@ -58,14 +69,12 @@ export default {
   },
   data() {
     return {
-      imagePath: `src/assets/img/${this.slug}/`
-      // imagePath: [
-      //   require(`@/assets/img/${this.slug}/image1.jpg`),
-      //   require(`@/assets/img/${this.slug}/image2.jpg`),
-      //   require(`@/assets/img/${this.slug}/image3.jpg`),
-      //   require(`@/assets/img/${this.slug}/image4.jpg`),
-      //   require(`@/assets/img/${this.slug}/image5.jpg`)
-      // ]
+      // imagePath: `src/assets/img/${this.slug}/`
+      imagePath1: require(`../assets/img/${this.slug}/image1.jpg`),
+      imagePath2: require(`../assets/img/${this.slug}/image2.jpg`),
+      imagePath3: require(`../assets/img/${this.slug}/image3.jpg`),
+      imagePath4: require(`../assets/img/${this.slug}/image4.jpg`),
+      imagePath5: require(`../assets/img/${this.slug}/image5.jpg`)
     };
   },
   mounted() {
