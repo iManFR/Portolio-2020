@@ -77,6 +77,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 @import "../styles/variables.scss";
+@import "~bootstrap/scss/mixins";
 
 .content__item-title {
   color: white !important;
@@ -217,7 +218,10 @@ body {
   padding-bottom: calc(var(--imgwidth) / (var(--aspect-ratio)));
   will-change: transform;
   width: 100%;
-  height: 600px;
+  height: 700px;
+  @include media-breakpoint-down(md) {
+    height: 600px;
+  }
 }
 
 .demo-2 .content__item-imgwrap {
