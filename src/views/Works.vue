@@ -47,5 +47,8 @@ export default {
 <style scoped>
 .content {
   margin-top: 10rem;
+
+  grid-area: grid;
+  margin: 25vh 0 30vh;
 }
 </style>

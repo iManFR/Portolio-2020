@@ -58,6 +58,20 @@ body {
   overflow-x: hidden;
   background-color: $second-color;
 }
+
+.demo-4 {
+  --color-text: #a9a798;
+  --color-bg: #cccdb9;
+  --color-link: #fff;
+  --color-link-hover: #a9a798;
+  --color-title: #fff;
+  font-family: collier, sans-serif;
+  --font-title: inherit;
+  --font-weight-title: 100;
+  font-size: 1.15rem;
+  --imgwidthmax: 520px;
+}
+
 *::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: $second-color;
