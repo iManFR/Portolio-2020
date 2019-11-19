@@ -36,7 +36,7 @@
             <br />Design UI/UX : Arthur Fayolle
           </p>-->
           <p v-for="author in authors" :key="author.id">{{ author }}</p>
-          <a class="btn btn-1 btn-1c" :href="link">View website</a>
+          <a class="btn btn-1 btn-1c" :href="link">{{ linklabel}}</a>
         </div>
       </div>
     </div>
@@ -47,7 +47,7 @@
 import data from "../data.json";
 export default {
   name: "Info",
-  props: ["title", "authors", "date", "role", "client", "link"],
+  props: ["title", "authors", "date", "role", "client", "link", "linklabel"],
   components: {},
   data() {
     return {

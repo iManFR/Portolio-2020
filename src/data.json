@@ -31,16 +31,18 @@
                 "client": "Frnch, Djula",
                 "authors": [
                     "Agency : W3lead",
+                    "Project manager : Lauren Claudel",
                     "Dev : Manolo Pecout, Thiebauld Genet",
                     "Design UI/UX : Arthur Fayolle"
                 ],
                 "role": {
                     "type": "Dev",
-                    "text": "Développement du site Ecommerce de Frnch sous Prestashop 1.7 à l'occasion de mon stage chez W3lead"
+                    "text": "Développement de deux sites Ecommerce sous Prestashop 1.7 à l'occasion de mon stage chez W3lead"
                 },
                 "date": "July - October 2019",
                 "brief": "Test",
                 "link": "https://www.w3lead.com/",
+                "linklabel": "Discover agency",
                 "color": "",
                 "cover": "w3lead.jpg",
                 "imgpath": "../assets/img/w3lead/",
@@ -67,6 +69,7 @@
                 "date": "March - April 2019",
                 "brief": "Test",
                 "link": "https://www.frnch.com/",
+                "linklabel": "View website",
                 "color": "",
                 "cover": "thewildbazar.jpg",
                 "imgpath": "../assets/img/thewildbazar/",
@@ -91,11 +94,12 @@
                 ],
                 "role": {
                     "type": "Dev",
-                    "text": "Développement du site Ecommerce de Frnch sous Prestashop 1.7 à l'occasion de mon stage chez W3lead"
+                    "text": "Réalisation d'une interface futuriste exclusivement en HTML, CSS et JS"
                 },
-                "date": "July - August 2019",
+                "date": "October 2018",
                 "brief": "Test",
-                "link": "https://www.frnch.com/",
+                "link": "https://www.manolopecout.fr/works/futuristic/",
+                "linklabel": "See project",
                 "color": "",
                 "cover": "futuristicinterface.jpg",
                 "imgpath": "../assets/img/thewildbazar",
@@ -117,11 +121,12 @@
                 ],
                 "role": {
                     "type": "Dev",
-                    "text": "Développement du site Ecommerce de Frnch sous Prestashop 1.7 à l'occasion de mon stage chez W3lead"
+                    "text": "Réalisation d'un projet en Three.js sur le thème de l'espace"
                 },
-                "date": "July - August 2019",
+                "date": "January 2019",
                 "brief": "Test",
-                "link": "https://www.frnch.com/",
+                "link": "https://www.manolopecout.fr/works/aroundtheworld/",
+                "linklabel": "See project",
                 "color": "",
                 "cover": "atw.jpg",
                 "imgpath": "../assets/img/thewildbazar",
@@ -135,19 +140,20 @@
                 "titlehtml": "Mosaïculture",
                 "slug": "mosaiculture",
                 "desc": "Website",
-                "visible": false,
+                "visible": true,
                 "client": "Janic Gourlet",
                 "authors": [
                     "Dev : Manolo Pecout",
                     "UI/UX Design : Manolo Pecout"
                 ],
                 "role": {
-                    "type": "Dev",
-                    "text": "Développement du site Ecommerce de Frnch sous Prestashop 1.7 à l'occasion de mon stage chez W3lead"
+                    "type": "Design & Dev",
+                    "text": "Développement d'un site vitrine de présentation d'activité pour un consultant"
                 },
-                "date": "July - August 2019",
+                "date": "August 2018",
                 "brief": "Test",
-                "link": "https://www.frnch.com/",
+                "link": "https://www.janicgourlet.fr/",
+                "linklabel": "View website",
                 "color": "",
                 "cover": "mosa.jpg",
                 "imgpath": "../assets/img/thewildbazar",

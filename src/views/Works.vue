@@ -18,6 +18,7 @@
         :role="work.role"
         :client="work.client"
         :link="work.link"
+        :linklabel="work.linklabel"
       ></Work>
     </div>
   </div>
