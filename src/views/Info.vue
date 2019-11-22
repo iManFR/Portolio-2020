@@ -67,9 +67,10 @@ export default {
 
 .info-title {
   h3 {
-    font-size: 2.25em;
+    font-size: 2em;
     font-family: $main-font;
     font-weight: $medium;
+    margin-bottom: 1rem;
   }
 }
 .info-desc {

@@ -212,7 +212,7 @@ export default {
   margin: 0 auto;
   grid-area: 1 / 1 / 3 / 3;
   overflow: hidden;
-  // width: var(--imgwidth);
+  width: var(--imgwidth);
   padding-bottom: calc(var(--imgwidth) / (var(--aspect-ratio)));
   will-change: transform;
   // width: 100%;
@@ -220,8 +220,8 @@ export default {
   // @include media-breakpoint-down(md) {
   //   height: 600px;
   // }
-  width: 100%;
-  height: 75vh;
+  // width: 100%;
+  // height: 75vh;
 }
 
 // .demo-2 .content__item-imgwrap {
