@@ -60,16 +60,16 @@ body {
 }
 
 .demo-4 {
-  --color-text: #a9a798;
-  --color-bg: #cccdb9;
-  --color-link: #fff;
-  --color-link-hover: #a9a798;
-  --color-title: #fff;
-  font-family: collier, sans-serif;
-  --font-title: inherit;
-  --font-weight-title: 100;
+  // --color-text: #a9a798;
+  // --color-bg: #cccdb9;
+  // --color-link: #fff;
+  // --color-link-hover: #a9a798;
+  // --color-title: #fff;
+  // font-family: collier, sans-serif;
+  // --font-title: inherit;
+  // --font-weight-title: 100;
   font-size: 1.15rem;
-  --imgwidthmax: 520px;
+  --imgwidthmax: 100%;
 }
 
 *::-webkit-scrollbar-track {
