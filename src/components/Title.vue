@@ -22,18 +22,18 @@ export default {
     };
   },
   mounted() {
-    var controller = new ScrollMagic.Controller();
-    // build tween
-    var tween = TweenMax.to("#animate3", 1, { className: "+=fish" });
-    // build scene
-    var scene = new ScrollMagic.Scene({
-      triggerElement: "#trigger",
-      duration: 200,
-      offset: -50
-    })
-      .setTween(tween)
-      .addIndicators({ name: "tween css class" }) // add indicators (requires plugin)
-      .addTo(controller);
+    // var controller = new ScrollMagic.Controller();
+    // // build tween
+    // var tween = TweenMax.to("#animate3", 1, { className: "+=fish" });
+    // // build scene
+    // var scene = new ScrollMagic.Scene({
+    //   triggerElement: "#trigger",
+    //   duration: 200,
+    //   offset: -50
+    // })
+    //   .setTween(tween)
+    //   .addIndicators({ name: "tween css class" }) // add indicators (requires plugin)
+    //   .addTo(controller);
   }
 };
 </script>
