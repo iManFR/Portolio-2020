@@ -69,7 +69,7 @@ body {
   // --font-title: inherit;
   // --font-weight-title: 100;
   font-size: 1.15rem;
-  --imgwidthmax: 100%;
+  // --imgwidthmax: 100%;
 }
 
 *::-webkit-scrollbar-track {
