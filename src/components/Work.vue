@@ -159,9 +159,10 @@ export default {
 // }
 
 .content__item {
-  --aspect-ratio: 16/9;
-  --imgwidth: calc(var(--imgwidthmax) * var(--aspect-ratio));
-  width: var(--imgwidth);
+  // --aspect-ratio: 16/9;
+  // --imgwidth: calc(var(--imgwidthmax) * var(--aspect-ratio));
+  // width: var(--imgwidth);
+  width: calc(100% * (16 / 9));
   max-width: 100%;
   position: relative;
   will-change: transform;
@@ -215,7 +216,8 @@ export default {
   grid-area: 1 / 1 / 3 / 3;
   overflow: hidden;
   width: 100%;
-  padding-bottom: calc(100% / (var(--aspect-ratio)));
+  // padding-bottom: calc(100% / (var(--aspect-ratio)));
+  padding-bottom: calc(100% / (16 / 9));
   will-change: transform;
   // width: 100%;
   // height: 700px;
@@ -240,9 +242,11 @@ export default {
 // }
 
 .content__item-img {
-  --overflow: 40px;
-  height: calc(100% + (2 * var(--overflow)));
-  top: calc(-1 * var(--overflow));
+  // --overflow: 40px;
+  // height: calc(100% + (2 * var(--overflow)));
+  // top: calc(-1 * var(--overflow));
+  height: calc(100% + (2 * 40px));
+  top: calc(-1 * 40px);
   width: 100%;
   position: absolute;
   background-size: cover;
@@ -278,19 +282,19 @@ export default {
   left: -7vw;
 }
 
-.content__item-title {
-  position: relative;
-  font-size: var(--size-title);
-  padding: 0 3vw;
-  margin: calc(var(--size-title) * -1 / 2) 0 0 0;
-  align-self: start;
-  line-height: 1;
-  font-family: var(--font-title);
-  font-weight: var(--font-weight-title);
-  color: var(--color-title);
-  will-change: transform;
-  mix-blend-mode: var(--blendmode-title);
-}
+// .content__item-title {
+//   position: relative;
+//   font-size: var(--size-title);
+//   padding: 0 3vw;
+//   margin: calc(var(--size-title) * -1 / 2) 0 0 0;
+//   align-self: start;
+//   line-height: 1;
+//   font-family: var(--font-title);
+//   font-weight: var(--font-weight-title);
+//   color: var(--color-title);
+//   will-change: transform;
+//   mix-blend-mode: var(--blendmode-title);
+// }
 
 .content--center .content__item-title {
   grid-area: 1 / 1 / 3 / 3;
