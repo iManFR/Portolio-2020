@@ -89,6 +89,7 @@ export default {
       flex-flow: row;
       justify-content: space-between;
       padding: 0;
+      margin-bottom: 16px;
       li {
         list-style: none;
         a {

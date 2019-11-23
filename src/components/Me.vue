@@ -53,6 +53,8 @@ p {
   line-height: 35px;
   @include media-breakpoint-down(sm) {
     margin-top: 30px;
+    font-size: 1.25em;
+    line-height: 30px;
   }
 }
 </style>

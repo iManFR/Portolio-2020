@@ -2,11 +2,11 @@
   <div>
     <div class="title-section col-12 col-md-10 mx-auto">
       <div class="row">
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-lg-8">
           <!-- <h1 class="project-title" v-html="titlehtml"></h1> -->
           <h1 class="project-title">{{ title }}</h1>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-lg-4">
           <h2 class="project-desc">{{ desc }}</h2>
           <!-- <h2>{{ slug }}</h2> -->
         </div>
@@ -45,7 +45,7 @@
       <img class="img-fluid" :src="imagePath4" alt />
       <img class="img-fluid" :src="imagePath5" alt />
     </div>
-    <div class="col-3 mx-auto">
+    <div class="col-12 col-md-4 col-lg-3 mx-auto">
       <a class="btn btn-1 btn-1c" :href="link">{{ linklabel }}</a>
     </div>
     <ProjectNav />
@@ -106,7 +106,7 @@ export default {
 
 .project-title {
   color: white;
-  font-size: 120px;
+  font-size: 7em;
   // white-space: nowrap;
   font-family: $main-font;
   font-weight: $black;
@@ -130,20 +130,20 @@ export default {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @include media-breakpoint-down(sm) {
-    font-size: 95px;
+    font-size: 4em;
   }
 }
 
 .project-desc {
   color: $main-color;
-  font-size: 2.5vw;
+  // font-size: 2.5vw;
+  font-size: 2em;
   white-space: nowrap;
   font-family: $main-font;
   font-weight: $bold;
   text-align: right;
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     text-align: left;
-    font-size: 10vw;
   }
 }
 img {

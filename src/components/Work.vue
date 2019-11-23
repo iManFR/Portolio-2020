@@ -219,7 +219,7 @@ export default {
   // padding-bottom: calc(100% / (var(--aspect-ratio)));
   padding-bottom: calc(100% / (16 / 9));
   will-change: transform;
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     padding-bottom: calc(100% / (9 / 16));
   }
   // width: 100%;
