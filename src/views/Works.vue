@@ -46,7 +46,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .content {
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
 
   grid-area: grid;
   margin: 25vh 0 30vh;
