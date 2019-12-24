@@ -26,7 +26,7 @@ export default {
     };
   },
   beforeCreate() {
-    console.log("✌🏻");
+    // console.log("✌🏻")
   }
 };
 </script>

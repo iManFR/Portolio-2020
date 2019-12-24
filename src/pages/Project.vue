@@ -2,8 +2,11 @@
   <div>
     <div class="title-section col-12 col-md-10 mx-auto">
       <div class="row">
-        <div class="col-12 col-lg-8">
+        <div class="col-12 col-lg-8 top-group">
           <!-- <h1 class="project-title" v-html="titlehtml"></h1> -->
+          <!-- <a class="back-button">
+            <img src="../assets/img/icons/arrow-left.svg" alt />
+          </a>-->
           <h1 class="project-title">{{ title }}</h1>
         </div>
         <div class="col-12 col-lg-4">
@@ -102,6 +105,25 @@ export default {
 
 .title-section {
   margin: 3rem 0;
+}
+
+.top-group {
+  display: flex;
+  align-items: center;
+}
+
+.back-button {
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 2rem;
+  img {
+    width: 0.5rem;
+  }
 }
 
 .project-title {

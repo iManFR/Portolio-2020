@@ -7,7 +7,9 @@
           <p>
             {{ data.footer.text[1] }}
             <br />
-            <span>{{ data.footer.mail }}</span>
+            <span>
+              <a href="mailto:manolo.p@hotmail.fr">{{ data.footer.mail }}</a>
+            </span>
           </p>
         </div>
         <div class="social-links">

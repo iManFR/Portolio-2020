@@ -1,6 +1,6 @@
 <template>
   <div class="col-10 col-md-8 mx-auto">
-    <div id="trigger" class="titles">
+    <div class="titles">
       <h2 class="title left">{{ title[0] }}</h2>
       <h2 class="title right">{{ title[1] }}</h2>
     </div>
@@ -8,10 +8,6 @@
 </template>
 
 <script>
-// import { TweenMax, TimelineLite, Power2, Elastic, CSSPlugin } from "gsap/all";
-// import ScrollMagic from "scrollmagic";
-// import "scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap";
-
 export default {
   name: "Title",
   props: ["title"],
@@ -22,18 +18,7 @@ export default {
     };
   },
   mounted() {
-    // var controller = new ScrollMagic.Controller();
-    // // build tween
-    // var tween = TweenMax.to("#animate3", 1, { className: "+=fish" });
-    // // build scene
-    // var scene = new ScrollMagic.Scene({
-    //   triggerElement: "#trigger",
-    //   duration: 200,
-    //   offset: -50
-    // })
-    //   .setTween(tween)
-    //   .addIndicators({ name: "tween css class" }) // add indicators (requires plugin)
-    //   .addTo(controller);
+    const TextSwipe = require("../js/TextSwipe");
   }
 };
 </script>
@@ -47,7 +32,8 @@ export default {
   margin: 12.5rem 0rem 9rem;
   .title {
     // font-size: calc(60px + (23000vw - 115000px) / 1900);
-    font-size: 12em;
+    // font-size: 12em;
+    font-size: 213px;
     white-space: nowrap;
     font-family: "GT America";
     font-weight: 900;
@@ -61,9 +47,11 @@ export default {
     }
     &.left {
       text-align: left;
+      will-change: transform;
     }
     &.right {
       text-align: right;
+      will-change: transform;
     }
   }
 }

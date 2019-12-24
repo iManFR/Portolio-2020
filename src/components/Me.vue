@@ -3,6 +3,7 @@
     <div class="row">
       <div class="col-12 col-md-6">
         <img src="../assets/img/giphy.gif" alt class="img-fluid" />
+        <!-- <img src="../assets/img/me.jpg" alt class="img-fluid" /> -->
       </div>
       <div class="col-12 col-md-6 d-flex align-items-center">
         <p v-html="data.about.text" class="about-text"></p>
@@ -50,7 +51,7 @@ p {
   font-family: "GT America";
   font-weight: 500;
   font-size: 2em;
-  line-height: 35px;
+  line-height: 40px;
   @include media-breakpoint-down(sm) {
     margin-top: 30px;
     font-size: 1.25em;

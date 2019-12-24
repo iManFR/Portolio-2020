@@ -71,7 +71,7 @@ export default {
     font-size: 2em;
     font-family: $main-font;
     font-weight: $medium;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
   }
 }
 .info-desc {

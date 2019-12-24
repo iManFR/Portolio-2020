@@ -46,6 +46,7 @@
         <!-- <br />
         <span>{{desc}}</span>-->
       </h2>
+      <!-- <span class="content__item-desc">{{desc}}</span> -->
     </div>
   </router-link>
 </template>
@@ -101,7 +102,21 @@ export default {
     font-size: 2vw !important;
     text-align: center !important;
   }
+  @include media-breakpoint-down(sm) {
+    font-size: 10vw;
+  }
 }
+
+.content__item-desc {
+  color: #fff;
+  font-size: 33px;
+  font-family: $main-font;
+  font-weight: 800;
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+}
+
 *,
 *::after,
 *::before {

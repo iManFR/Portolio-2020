@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import WorksAnim from "@/js/WorksAnim";
+// import WorksAnim from "@/js/WorksAnim";
 // import Darkmode from "darkmode-js";
 
 export default {
@@ -30,6 +30,8 @@ export default {
     // };
     // const darkmode = new Darkmode(options);
     // darkmode.showWidget();
+
+    const WorksAnim = require("./js/WorksAnim");
   }
 };
 </script>

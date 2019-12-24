@@ -12,6 +12,9 @@ export default {
   name: "ProjectNav",
   data() {
     return {};
+  },
+  updated() {
+    const TextSwipe = require("../js/TextSwipe");
   }
 };
 </script>
