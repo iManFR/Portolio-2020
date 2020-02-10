@@ -2,11 +2,11 @@
   <div class="full-view">
     <div class="col-12 col-md-10 mx-auto">
       <div class="footer-content">
-        <div class="contact-text col-12 col-md-10 mx-auto">
+        <div class="contact-text col-12 col-md-9 mx-auto">
           <p>{{ data.footer.text[0] }}</p>
           <p>
             {{ data.footer.text[1] }}
-            <br />
+            <!-- <br /> -->
             <span>
               <a href="mailto:manolo.p@hotmail.fr">{{ data.footer.mail }}</a>
             </span>
@@ -55,12 +55,17 @@ export default {
     text-align: center;
     p {
       font-family: "GT America";
-      // font-size: 2.75em;
-      font-size: calc(33px + (3200vw - 16000px) / 1900);
       font-weight: 900;
       line-height: 1.1em;
       // width: 80%;
       color: $main-color;
+      font-size: 2.5em;
+      @include media-breakpoint-down(md) {
+        font-size: 1.75em;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 1em;
+      }
       span {
         background: $gradient-color-3; /* fallback for old browsers */
         background: -webkit-linear-gradient(
@@ -97,14 +102,13 @@ export default {
         a {
           color: $main-color;
           font-family: "GT America";
-          // font-size: calc(25px + (3200vw - 16000px) / 1900);
           font-weight: 900;
-          font-size: 35px;
+          font-size: 2.5em;
           @include media-breakpoint-down(md) {
-            font-size: 25px;
+            font-size: 1.75em;
           }
           @include media-breakpoint-down(sm) {
-            font-size: 18px;
+            font-size: 1em;
           }
         }
       }

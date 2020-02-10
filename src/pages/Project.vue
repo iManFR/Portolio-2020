@@ -7,36 +7,25 @@
           <!-- <a class="back-button">
             <img src="../assets/img/icons/arrow-left.svg" alt />
           </a>-->
-          <h1 class="project-title">{{ title }}</h1>
+          <h1 class="project-title">{{ project.title }}</h1>
         </div>
         <div class="col-12 col-lg-4">
-          <h2 class="project-desc">{{ desc }}</h2>
+          <h2 class="project-desc">{{ project.desc }}</h2>
           <!-- <h2>{{ slug }}</h2> -->
         </div>
       </div>
     </div>
 
     <Info
-      :title="title"
-      :authors="authors"
-      :date="date"
-      :role="role"
-      :client="client"
-      :link="link"
-      :linklabel="linklabel"
+      :title="project.title"
+      :authors="project.authors"
+      :date="project.date"
+      :role="project.role"
+      :client="project.client"
+      :link="project.link"
+      :linklabel="project.linklabel"
     ></Info>
 
-    <!-- <div class="col-12 col-md-10 mx-auto">
-      <img class="img-fluid" :src="imagePath+imgs[0]" alt />
-      <img class="img-fluid" :src="imagePath+imgs[1]" alt />
-    </div>
-    <div class="container-fluid middle-banner">
-      <img :src="imagePath+imgs[2]" alt />
-    </div>
-    <div class="col-12 col-md-10 mx-auto">
-      <img class="img-fluid" :src="imagePath+imgs[3]" alt />
-      <img class="img-fluid" :src="imagePath+imgs[4]" alt />
-    </div>-->
     <div class="col-12 col-md-10 mx-auto">
       <img class="img-fluid" :src="imagePath1" alt />
       <img class="img-fluid" :src="imagePath2" alt />
@@ -49,7 +38,7 @@
       <img class="img-fluid" :src="imagePath5" alt />
     </div>
     <div class="col-12 col-md-4 col-lg-3 mx-auto">
-      <a class="btn btn-1 btn-1c" :href="link">{{ linklabel }}</a>
+      <a class="btn btn-1 btn-1c" :href="project.link">{{ project.linklabel }}</a>
     </div>
     <ProjectNav />
     <Footer></Footer>
@@ -62,21 +51,7 @@ import ProjectNav from "../components/ProjectNav";
 import Footer from "../views/Footer";
 export default {
   name: "Project",
-  props: [
-    "slug",
-    "title",
-    "titlehtml",
-    "desc",
-    "authors",
-    "date",
-    "role",
-    "cover",
-    "imgs",
-    "path",
-    "client",
-    "link",
-    "linklabel"
-  ],
+  props: ["slug"],
   components: {
     Info,
     ProjectNav,
@@ -92,9 +67,14 @@ export default {
       imagePath5: require(`../assets/img/${this.slug}/image5.jpg`)
     };
   },
-  mounted() {
-    window.scrollTo(0, 0);
+  computed: {
+    project() {
+      return this.$store.getters.project(this.$route.params.slug);
+    }
   }
+  // mounted() {
+  //   window.scrollTo(0, 0);
+  // }
 };
 </script>
 

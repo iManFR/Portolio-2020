@@ -2,7 +2,7 @@
   <div class="full-view">
     <div class="col-12 col-md-10 mx-auto">
       <div class="titles-content">
-        <h1 class="name">{{data.landing.name}}</h1>
+        <h1 ref="name" class="name">{{data.landing.name}}</h1>
         <h1 class="freelance">
           {{data.landing.freelance}}
           <div class="spinner">
@@ -19,12 +19,19 @@
 
 <script>
 import data from "../data.json";
+// import { TimelineLite } from "gsap";
+// import { ScrollMagic } from "scrollmagic";
 export default {
   name: "Landing",
   data() {
     return {
       data: data
     };
+  },
+  mounted() {
+    // const { name } = this.$refs;
+    // const timeline = new TimelineLite();
+    // timeline.from(name, 1, { x: -200 });
   }
 };
 </script>

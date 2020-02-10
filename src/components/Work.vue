@@ -1,31 +1,11 @@
 <template>
-  <!-- <router-link :to="`/${slug}`"> -->
-  <router-link
-    :to="{ 
-      name: 'Project',
-      params: { 
-        slug: slug, 
-        title: title, 
-        titlehtml: titlehtml, 
-        desc: desc, 
-        authors: authors, 
-        date: date, 
-        role: role,
-        cover: cover,
-        imgs: imgs,
-        path: path,
-        client: client,
-        link: link,
-        linklabel
-      } 
-    }"
-  >
+  <router-link :to="{ name: 'Project', params: { slug: slug } }">
     <!-- <div v-if="visible" class="content__item" style="--aspect-ratio: 16/9;"> -->
     <div v-if="visible" class="content__item">
       <div class="content__item-imgwrap">
         <!-- <div
-          class="content__item-img"
-          :style="{ 'background-image': 'url(' + '../assets/img/frnch/' + imgs[0] + ')' }"
+            class="content__item-img"
+            :style="{ 'background-image': 'url(' + '../assets/img/frnch/' + imgs[0] + ')' }"
         ></div>-->
         <!-- <div class="content__item-img" :style="test"></div> -->
         <!-- <div class="content__item-img" :style="{ backgroundImage: `url('${path+img}')` }"></div> -->
@@ -33,15 +13,17 @@
         <!-- <div class="content__item-img" style="background-image: url(../../public/image1.jpg)"></div> -->
         <!-- <div class="content__item-img" :style="{ backgroundImage: `url(${image})` }"></div> -->
         <!-- <div
-          class="content__item-img"
-          :style="{ backgroundImage: `url('../src/assets/img/cover/${cover}')` }"
+            class="content__item-img"
+            :style="{ backgroundImage: `url('../src/assets/img/cover/${cover}')` }"
         ></div>-->
         <!-- <div
-          class="content__item-img"
-          :style="{ backgroundImage: 'url(../src/assets/img/cover/' + cover + ')' }"
+            class="content__item-img"
+            :style="{ backgroundImage: 'url(../src/assets/img/cover/' + cover + ')' }"
         ></div>-->
         <div class="content__item-img" :style="{'background-image': 'url(' + imageUrl + ')'}"></div>
       </div>
+      <div class="background-anim"></div>
+      <div class="background-anim-blind"></div>
       <h2 v-html="titlehtml" class="content__item-title">
         <!-- <br />
         <span>{{desc}}</span>-->
@@ -55,22 +37,7 @@
 import data from "../data.json";
 export default {
   name: "Work",
-  props: [
-    "title",
-    "titlehtml",
-    "slug",
-    "desc",
-    "path",
-    "imgs",
-    "visible",
-    "cover",
-    "authors",
-    "date",
-    "role",
-    "client",
-    "link",
-    "linklabel"
-  ],
+  props: ["titlehtml", "cover", "visible", "projectId", "slug"],
   data() {
     return {
       imageUrl: require(`../assets/img/cover/${this.cover}`)
@@ -272,6 +239,43 @@ export default {
   will-change: transform;
   opacity: 0.8;
   // opacity: 1;
+}
+
+// Anim white behind work item
+// .background-anim {
+//   width: 100%;
+//   height: 100%;
+//   background-color: #fff;
+//   transition: transform 0.3s ease-in-out;
+//   position: absolute;
+//   z-index: -2;
+// }
+
+// .content__item {
+//   &:hover {
+//     .background-anim {
+//       transform: translate(12.5px, 12.5px);
+//     }
+//   }
+// }
+
+// .background-anim-blind {
+//   width: 100%;
+//   height: 100%;
+//   background-color: #000;
+//   position: absolute;
+//   z-index: -1;
+// }
+
+.content__item {
+  .content__item-img {
+    transition: transform 0.6s ease-in-out;
+  }
+  &:hover {
+    .content__item-img {
+      transform: scale(1.1);
+    }
+  }
 }
 
 // .content__item-img--t1 {
